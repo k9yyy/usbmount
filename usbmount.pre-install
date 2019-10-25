@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+# If the package is installed, try to create the default mountpoints.
+
+mkdir -p /media
+for i in 0 1 2 3 4 5 6 7; do
+    mkdir -p /media/usb$i
+done
+
+exit 0
+
